@@ -7,7 +7,7 @@ export const createEngine = async (source: string | Uint8Array) => {
   }, { useWasi: true })
 
   const run = async (code: string) => {
-    const output = await plugin.call("lua", code);
+    const output = await plugin.call("execLua", code);
     return output?.text();
   };
 

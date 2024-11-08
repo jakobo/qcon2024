@@ -4,8 +4,8 @@ import "github.com/extism/go-pdk"
 import "github.com/Shopify/go-lua"
 
 
-//export run
-func run() int32 {
+//export execLua
+func execLua() int32 {
 	input := pdk.Input()
 	output := ""
 
